@@ -1,0 +1,140 @@
+html,
+body {
+    font-size: 1.025rem;
+    font-family: 'Oswald', sans-serif;
+    background-color: lightgrey;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.9)
+}
+
+/* HEADER + MAIN-NAV */
+
+header h1 {
+    min-width: 80vw;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.9);
+    font-weight: bold;
+}
+header h1, ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-nav ul li {
+    font-size: 1.25rem;
+    border-radius: 5px;
+    background-color: lightgrey;
+    box-shadow: inset 0 0 5px rgba(0,0,0,.7);
+    list-style: none;
+    margin-left: -40px;
+    padding: .75rem;
+}
+
+.main-nav a {
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: .5px .5px 1px rgba(0,0,0,.9);
+}
+
+/* MAIN BIO */
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: ghostwhite;
+    box-shadow: inset 0 0 10px rgba(0,0, 0,.7);
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+}
+.main img {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+
+}
+
+/* PORTFOLIO */
+
+section, h1 {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+
+section, p {
+    padding: 1.5rem;
+}
+
+section img {
+    width: 90vw;
+}
+section h2, p {
+    padding-top: 1rem;
+    margin: 0 auto;
+    text-align: center;
+}
+/* CONTACT */
+
+.contact {
+    padding: 1rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background-color: ghostwhite;
+    box-shadow: inset 0 0 10px rgba(0,0, 0,.7);
+    border-radius: 5px;
+    text-align: center;justify-content: center;
+}
+
+.contact h1 {
+    margin: 0 auto;
+    color: #000;
+    text-shadow: 2px 2px 3px rgba(244,244,244,1);
+
+}
+.contact a {
+    color: teal;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: -16px;
+}
+
+footer a {
+    color: teal;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* MEDIA QUERY */
+
+@media (min-width:768px;){
+
+}
+
+@media (min-width:1024px;){
+
+}
