@@ -2,7 +2,7 @@ html,
 body {
     font-size: 1.025rem;
     font-family: 'Oswald', sans-serif;
-    background-color: lightgrey;
+    background-color: ghostwhite;
     height: 100vh;
     box-sizing: border-box;
 }
@@ -10,8 +10,8 @@ body {
 h1 {
     font-size: 2rem;
     font-weight: bold;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0,0,0,.9)
+    color: black;
+    text-shadow: .5px .5px 2px rgba(0,0,0,.7)
 }
 
 /* HEADER + MAIN-NAV */
@@ -19,8 +19,9 @@ h1 {
 header h1 {
     min-width: 80vw;
     text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.9);
+    color: #000;
+    text-shadow: .5px .5px 1px rgba(0,0,0,.9);
+    font-size: 3rem;
     font-weight: bold;
 }
 header h1, ul {
@@ -34,8 +35,8 @@ header h1, ul {
 .main-nav ul li {
     font-size: 1.25rem;
     border-radius: 5px;
-    background-color: lightgrey;
-    box-shadow: inset 0 0 5px rgba(0,0,0,.7);
+    background-color: ghostwhite;
+    box-shadow: inset 0 0 10px rgba(0,0,0,.7);
     list-style: none;
     margin-left: -40px;
     padding: .75rem;
@@ -43,9 +44,9 @@ header h1, ul {
 
 .main-nav a {
     font-weight: bold;
-    color: #fff;
+    color: #000;
     text-decoration: none;
-    text-shadow: .5px .5px 1px rgba(0,0,0,.9);
+    text-shadow: 0 0 1px rgba(0,0,0,.9);
 }
 
 /* MAIN BIO */
@@ -132,7 +133,16 @@ footer a {
 /* MEDIA QUERY */
 
 @media (min-width:768px){
-
+    .main-nav {
+        display: flex;
+    }
+    .main-nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-grow: 1;
+        flex: 1fr 1fr 1fr;
+    }
 }
 
 @media (min-width:1024px){
