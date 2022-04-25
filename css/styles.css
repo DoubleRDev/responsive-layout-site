@@ -5,7 +5,8 @@ body {
     background-color: ghostwhite;
     height: 100vh;
     box-sizing: border-box;
-    padding: .5rem;
+    padding: .25rem;
+    margin: 0 auto;
 }
 
 h1 {
@@ -50,41 +51,41 @@ header h1, ul {
 /* MAIN BIO */
 
 .main {
-    display: flex;
-    flex-wrap: wrap;
+    
     background-color: ghostwhite;
     box-shadow: inset 0 0 10px rgba(0,0, 0,.7);
     border-radius: 5px;
-    margin: 0 auto;
     padding: 1rem 1rem;
+    margin: 0 auto;
 }
 .main img {
-    justify-content: space-around;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
     width: 90%;
+    margin: 0 auto;
 
 }
 
 /* PORTFOLIO */
 
-section, h1 {
+section h1 {
+    text-align: center;
+}
+
+.wrapper {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     margin: 0 auto;
+    padding-bottom: 1rem;
     
 }
 
 section, p {
-    padding: 1.5rem;
+    padding: .7rem;
 }
 
 section img {
-    width: 90vw;
+    width: 85vw;
 }
 section h2, p {
     padding-top: 1rem;
@@ -114,12 +115,25 @@ section h2, p {
     color: teal;
 }
 
+.contact p {
+    line-height: 1.5rem;
+}
+
+.contact span {
+    font-size: .90rem;
+}
+
 /* FOOTER */
 
 footer {
     display: flex;
     justify-content:space-between;
+    margin-top: 1rem;
     margin-bottom: -16px;
+}
+
+footer h3 {
+    font-size: 1.025rem;
 }
 
 footer a {
@@ -127,10 +141,16 @@ footer a {
     list-style: none;
     text-decoration: none;
 }
+.footer-nav {
+    display: none;
+    list-style-type: none;
+    
+}
 
 /* MEDIA QUERY */
 
 @media (min-width:768px){
+    
     header h1 {
         padding-top: 2rem;
         font-size: 3rem;
@@ -147,6 +167,71 @@ footer a {
         font-size: 3rem;
         padding: 1rem 4rem;
     }
+
+    /* MAIN BIO */
+
+    .main { 
+        line-height: 1.5rem;
+        height: 250px;
+        display: flex;
+        flex-direction: row-reverse;
+        flex: 1; 
+        margin: 0 auto;
+
+    } 
+    .main img {
+        height: 190px;
+        width: 40%;
+        margin: 0;
+    }
+
+    .main p {
+        width: 60%;
+    }
+
+    /* PORTFOLIO SECTION */
+    section h1 {
+        width: 100vw;
+    }
+
+    .wrapper {
+        display: flex;
+    }
+    .wrapper div {
+    }
+
+    section img  {
+        width: 45vw;
+    }
+
+    .item1, .item2, .item3, .item4, .item5, .item6  {
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+    }
+
+    
+
+    /* CONTACT */
+
+    .contact p {
+        margin: 0 15%;
+    }
+
+    /* FOOTER */
+
+    .short-nav {
+        display: none;
+    }
+
+    .footer-nav {
+        display: inline;
+    }
+    footer ul li {
+        padding-right: .5rem;
+        display: inline;
+    }
+
 }
 
 @media (min-width:1024px){

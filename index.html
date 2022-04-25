@@ -24,10 +24,10 @@
         </nav>
     </header>
 
-    <div class="main">
-    <main>
-        <img src="/responsive_layout_v3/images/responsive-layout-profile.png">
-        <p>Hi! Im a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to pull all my skills to use!
+    <div >
+    <main class="main">
+        <img class="bio-img" src="/responsive_layout_v3/images/responsive-layout-profile.png">
+        <p class="about-bio">Hi! Im a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to pull all my skills to use!
         </p>
        
     </main>
@@ -35,13 +35,13 @@
     
     <section id="portfolio" class="container">
         <h1>PORTFOLIO</h1>
-            
+            <div class="wrapper">
             <div class="item1">
                 <img src="/responsive_layout_v3/images/portfolio-1.png" alt="Marketing Page Project Image">
                 <h2>Marketing Page</h2>
                 <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
             
-            <div class-item2>
+            <div class="item2">
                 <img src="/responsive_layout_v3/images/portfolio-2.png" alt="Search Page Project Image">
                 <h2>Search Page</h2>
                 <p>This project searches through a specific database to find information that the user is trying to look up.</p>
@@ -70,6 +70,7 @@
                 <h2>Calculator</h2>
                 <p>Someone can enter in the numbers they want, and press the big blue button and get the results.</p>
             </div>
+            </div>
 
     </section>
 
@@ -84,8 +85,9 @@
             <a href="sms:1(475)241-5170">+1 (475) 241-5170
             </a>
             <br>
-            Email
+            <span>Email
             <a href="mailto:doublerdev22@gmail.com">DoubleRDev22gmail.com</a>
+            </span>
         </p>
 
     </div>
@@ -93,7 +95,16 @@
     <footer>
         <h3>Richard Rivera</h3>
         <nav>
+            <span class="short-nav">
             <p><a href="index.html">Back To Top</a></p>
+            </span>
+            <ul>
+                <span class="footer-nav">
+                    <li><a hef="index.html">HOME</a></li>
+                    <li><a hef="#portfolio">PORTFOLIO</a></li>
+                    <li><a hef="#contact">CONTACT</a></li>
+                </span>
+            </ul>
         </nav>
     </footer>
 
