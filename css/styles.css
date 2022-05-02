@@ -1,7 +1,7 @@
 html,
 body {
     font-size: 1.025rem;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
     background-color: lightgrey;
     height: 100vh;
     box-sizing: border-box;
@@ -11,7 +11,7 @@ body {
 
 h1 {
     letter-spacing: .2rem;
-    font-family:'Bebas Neue', sans-serif;
+    font-family: 'Lora', serif;
     font-size: 3rem;
     font-weight: bold;
     color: black;
@@ -19,7 +19,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Lora', serif;
     letter-spacing: .175rem;;
 }
 
@@ -223,7 +223,6 @@ footer {
     display: flex;
     justify-content:space-between;
     margin-top: 1rem;
-    margin-bottom: -16px;
 }
 
 footer h3 {
